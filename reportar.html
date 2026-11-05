@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate Animal</h1>
+        <p>Registro de nuevos incidentes.</p>
+    </header>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar incidente</a></li>
+            <li><a href="rescates.html">Ver rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de reporte</h2>
+            <p>Complete los siguientes campos para registrar un incidente.</p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Datos del incidente</legend>
+
+                    <label for="titulo">Título del incidente:</label>
+                    <input type="text" id="titulo" name="titulo"
+                           placeholder="Ejemplo: Animal herido"
+                           required minlength="5">
+
+                    <br><br>
+
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Maltrato">Maltrato</option>
+                        <option value="Abandono">Abandono</option>
+                        <option value="Animal atrapado">Animal atrapado</option>
+                        <option value="Emergencia medica">Emergencia médica</option>
+                        <option value="Comportamiento agresivo">Comportamiento agresivo</option>
+                        <option value="Mascota extraviada">Mascota extraviada</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="especie">Especie de animal:</label>
+                    <select id="especie" name="especie" required>
+                        <option value="">Seleccione una especie</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Caballo">Caballo</option>
+                        <option value="Conejo">Conejo</option>
+                        <option value="Vaca">Vaca</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+
+                    <br><br>
+
+                    <p>Prioridad del incidente:</p>
+
+                    <input type="radio" id="alta" name="prioridad"
+                           value="Alta" required>
+                    <label for="alta">Alta</label>
+
+                    <input type="radio" id="media" name="prioridad"
+                           value="Media">
+                    <label for="media">Media</label>
+
+                    <input type="radio" id="baja" name="prioridad"
+                           value="Baja">
+                    <label for="baja">Baja</label>
+
+                    <br><br>
+
+                    <label for="descripcion">Descripción detallada:</label>
+                    <br>
+                    <textarea id="descripcion" name="descripcion"
+                              rows="5" cols="40"
+                              placeholder="Describa el incidente..."
+                              required minlength="10"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Registrar incidente</button>
+                <button type="reset">Limpiar formulario</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto académico - Sistema de Control de Rescate Animal.</p>
+        <p>Autor: Jose Valentin Cusme Salazar</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+
+</body>
+</html>
