@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescates Registrados</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate Animal</h1>
+        <p>Consulta de incidentes registrados.</p>
+    </header>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar incidente</a></li>
+            <li><a href="rescates.html">Ver rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Listado de Rescates</h2>
+            <p>Los siguientes registros son ejemplos académicos.</p>
+
+            <table>
+                <caption>Registro de incidentes del sistema</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">N.º</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Categoría</th>
+                        <!-- AQUÍ SE AÑADIÓ EL ENCABEZADO DE LA ESPECIE -->
+                        <th scope="col">Especie</th>
+                        <th scope="col">Prioridad</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Perro herido</td>
+                        <td>Emergencia médica</td>
+                        <!-- CELDA DE ESPECIE PARA EL REGISTRO 1 -->
+                        <td>Perro</td>
+                        <td>Alta</td>
+                        <td>Animal encontrado con una lesión.</td>
+                        <td>Pendiente</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Gato abandonado</td>
+                        <td>Mascota extraviada</td>
+                        <!-- CELDA DE ESPECIE PARA EL REGISTRO 2 -->
+                        <td>Gato</td>
+                        <td>Media</td>
+                        <td>Gato encontrado en la calle.</td>
+                        <td>Atendido</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Animal en peligro</td>
+                        <td>Maltrato</td>
+                        <!-- CELDA DE ESPECIE PARA EL REGISTRO 3 -->
+                        <td>Otros</td>
+                        <td>Alta</td>
+                        <td>Animal necesita atención inmediata.</td>
+                        <td>Atendido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Estados de los rescates</h2>
+
+            <ul>
+                <li>Pendiente: incidente registrado que necesita atención.</li>
+                <li>En proceso: incidente que está siendo atendido.</li>
+                <li>Atendido: incidente que ya recibió atención.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pasos para gestionar un rescate</h2>
+
+            <ol>
+                <li>Registrar el incidente.</li>
+                <li>Revisar la información recibida.</li>
+                <li>Asignar un responsable.</li>
+                <li>Actualizar el estado del incidente.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto académico - Sistema de Control de Rescate Animal.</p>
+        <p>Autor: Jose Valentin Cusme Salazar</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+
+</body>
+</html>
